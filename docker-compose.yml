@@ -1,25 +1,17 @@
-version: "3.6"
+version: '3'
 
 services:
-  selenium-hub:
-    restart: always
-    image: selenium/hub:3.14.0
-      dockerfile: Dockerfile
-    depends_on:
-      - chrome
-    ports:
-      - '8443:8443'
-
-  chrome:
-    image: selenium/node-chrome:3.14.0-gallium
-    volumes:
-      - /dev/shm:/dev/shm
-    depends_on:
-      - hub
-    environment:
-      HUB_HOST: hub
-
-  hub:
-    image: selenium/hub:3.14.0-gallium
+  selenium:
+    image: selenium/standalone-chrome
     ports:
       - "4444:4444"
+    restart: always
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    depends_on:
+      - selenium
