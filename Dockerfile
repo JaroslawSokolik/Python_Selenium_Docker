@@ -6,4 +6,3 @@ RUN pip install selenium
 RUN mkdir /app/
 COPY ./app /app/
 WORKDIR /app/
-CMD ["python3", "bot.py"]
