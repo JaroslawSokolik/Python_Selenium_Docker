@@ -4,4 +4,4 @@ ADD . /tests
 WORKDIR /tests
 RUN pip install -r requirements.txt
 ENV DISPLAY :99
-CMD pytest bot.py
+CMD python bot.py
