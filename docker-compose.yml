@@ -2,7 +2,7 @@ version: '3'
 
 services:
   selenium:
-    image: selenium/standalone-chrome
+    image: selenium/standalone-chrome:latest
     ports:
       - "4444:4444"
     restart: always
@@ -11,8 +11,5 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - ./app:/app
-    command: sh -c "python bot.py"
     depends_on:
       - selenium
