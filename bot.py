@@ -4,7 +4,7 @@ from selenium import webdriver
 
 sleep(5)
 
-driver = webdriver.Remote('http://selenium:4444/wd/hub', desired_capabilities=DesiredCapabilities.CHROME)
+driver = webdriver.Remote('http://localhost:4444/wd/hub', desired_capabilities=DesiredCapabilities.CHROME)
 driver.get("https://www.clicktrans.pl/")
 driver.save_screenshot("screenshot_main_page.png")
 print("screenshot saved from Clicktrans main page")
