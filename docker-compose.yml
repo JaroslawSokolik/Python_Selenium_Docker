@@ -7,7 +7,7 @@ services:
     restart: always
 
   app:
-    container_name: dockerized_tests
+    container_name: my_tests
     build:
       context: .
     volumes:
