@@ -1,0 +1,15 @@
+Example of easy docker integration with selenium tests :)
+
+Usage:
+
+1.git pull https://github.com/JaroslawSokolik/Python_Selenium_Docker.git
+2.Run "docker-compose up"
+
+That's it
+
+Selenium script goes to python.org, makes a screenshot.Then goes to Pypi and search for "selenium".
+
+Then screenshot is made again and saved inn the project.
+
+Enjoy :)
+
