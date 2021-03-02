@@ -4,7 +4,7 @@ from selenium import webdriver
 
 sleep(5)
 
-driver = webdriver.Remote('http://selenium-hub:4444/wd/hub', desired_capabilities=DesiredCapabilities.CHROME)
+driver = webdriver.Remote('http://selenium:4444/wd/hub', desired_capabilities=DesiredCapabilities.CHROME)
 driver.get("https://www.python.org/")
 driver.save_screenshot("python_main_page.png")
 print("screenshot from python main page saved")
