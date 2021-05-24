@@ -7,9 +7,9 @@ Usage:
 
 That's it
 
-Selenium script goes to python.org, makes a screenshot.Then goes to Pypi and search for "selenium".
+Selenium script goes to python.org, makes a screenshot.Then goes to Pypi and search for "selenium" and make another screenshot.
 
-Then screenshot is made again and saved inn the project.
+Both screenshots are saved in screenshot file.
 
 Enjoy :)
 
